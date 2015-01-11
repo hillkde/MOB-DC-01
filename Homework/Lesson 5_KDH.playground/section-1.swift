@@ -66,9 +66,12 @@ func save(name: String) -> (first: String, last: String) {
     var lastName = "Konda"
     return (firstName, lastName)
 
-var myName = save("Tedi")
-myName.first
-myName.last
-
-
-
+//var myName = save("Tedi")
+//myName.first
+//myName.last
+//    
+//func save(name: String) -> (first: String, last String) {
+//    var lastName = "Konda"
+//    return (name, lastName)
+//
+}
