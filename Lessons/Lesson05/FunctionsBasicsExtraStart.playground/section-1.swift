@@ -18,7 +18,7 @@ A function will ALWAYS have the parentheses
 Within a function we can literally do whatever we want except create a new function within it
 But we can create variables, constants, loops, if statements, call other functions and so on
 To call another function within a function we do the same thing again
-Example:
+Example:  **WHY??**
     func doTheKnockKnock() {
         knockknock()
     }
