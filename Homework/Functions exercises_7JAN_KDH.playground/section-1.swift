@@ -1,6 +1,6 @@
 // Playground - noun: a place where people can play
 // Lesson 05
-
+import Foundation
 // Complete these, in order, writing code under each TODO statement. Each statement calls for a function to be written, write each of them and then immediately call it after the function definition.
 
 // TODO: Write a function that prints out "Hello world!" 10 times
@@ -82,15 +82,16 @@ giveMeTheSumOfFib()
 // TODO: Write a function that takes in a number and prints out whether it is prime, composite or neither.
 
 func isPrime(value: Int) -> String {
-    // So we check for those first, if value is less or equal to three we go into this if
-    // If the value is equal or bigger than two it's returning true
-    // Note if so, the execution of this func stops here!
     if value <= 3 && value >= 2 {
         return "prime"
     }
     
+    // So we check for those first, if value is less or equal to three we go into this if
+    // If the value is equal or bigger than two it's returning true
+    // Note if so, the execution of this func stops here!
     // The difinition of a prime is that you can only devide it by one and itself
     // So if the remainder after a division between two or three is zero, it's not a prime
+    
     println("value % 2 = \(value % 2), value % 3 = \(value % 3)")
     if value % 2 == 0 || value % 3 == 0 {
         return "Composite"
@@ -128,34 +129,34 @@ func isPrime(value: Int) -> String {
 // TODO: Write a function that prints out each of the first 20 fibonacci numbers and whether they are prime. (e.g. 0 is not prime or composite, 1 is prime, etc)
 
 func giveMeTheListFor(number:Int) {
-    for index in 1..<=number {
-        println(isPrime(fib[index]))
+    for index in 1..<number {
+        println("\(isPrime(fib(index)))")
     }
 }
 
 giveMeTheListFor(20)
 
 
-func takesInNumber(value: Int) -> String {
-    if value <= 3 && value >= 2 {
-        return "prime"
-}
-
 // TODO: Write a function that takes in two numbers, a bill amount and an optional tip percentage (represented as a float, e.g. .2 = 20% tip). Return a tuple with the total bill amount and the tip amount (if included).
 
-func takesInTwoNumbers(billAmount: Int, tipPercentage: Int)
-    var sum = billAmount + tipPercentage {
-        return sum
+func calcTip(billAmt: Float, tipAmt: Float?) -> (total: Float, tip: Float) {
+    if let gratuity = tipAmt {
+        let total = gratuity + billAmt
+        let tipTotal = billAmt * gratuity
+        return (total, tipTotal)
     }
-    
+}
 
 // TODO: Write a function that takes in a string and returns a string that is the reverse of the input. Append two strings using the + operator.
 
-    func returnString(String) -> String {
-        
-}
-
-
+    func returnString(word: String) -> String {
+        var reversedWord: String = ""
+        for character in word {
+            reversedWord = reversedWord + character
+        }
+        return reversedWord + word
+    }
+var tempWord = returnString("Hello Class")
 
 // BONUS TODO: Write a function that takes in an array of strings and a search term string. Return a boolean indicating whether the search term string exists in the array.
 
