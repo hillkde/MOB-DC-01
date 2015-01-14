@@ -5,20 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>5227A019-0C3C-48DA-831A-D3D3AC111BFD</string>
+	<string>AEA7CC07-778C-4B7B-A833-5BD24F7C3BBE</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Interface Builder and Functions</string>
+	<string>IB Coding Demo_Lesson 6_KDH</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>10A52EA4FBADB6C746B5260032017E5923CCC696</key>
 		<string>https://github.com/hillkde/MOB-DC-01.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Lessons/Lesson06/Interface Builder and Functions/Interface Builder and Functions.xcodeproj</string>
+	<string>IB Coding Demo_Lesson 6_KDH/IB Coding Demo_Lesson 6_KDH.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>10A52EA4FBADB6C746B5260032017E5923CCC696</key>
-		<string>../../../../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/hillkde/MOB-DC-01.git</string>
