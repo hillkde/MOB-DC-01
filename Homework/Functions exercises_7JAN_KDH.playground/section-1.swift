@@ -140,11 +140,14 @@ giveMeTheListFor(20)
 // TODO: Write a function that takes in two numbers, a bill amount and an optional tip percentage (represented as a float, e.g. .2 = 20% tip). Return a tuple with the total bill amount and the tip amount (if included).
 
 func calcTip(billAmt: Float, tipAmt: Float?) -> (total: Float, tip: Float) {
+    var total:Float = 0
+    var tipTotal:Float = 0
     if let gratuity = tipAmt {
-        let total = gratuity + billAmt
-        let tipTotal = billAmt * gratuity
-        return (total, tipTotal)
+        tipTotal = billAmt * gratuity
+        total = tipTotal + billAmt
     }
+    
+    return (total, tipTotal)
 }
 
 // TODO: Write a function that takes in a string and returns a string that is the reverse of the input. Append two strings using the + operator.
@@ -152,7 +155,7 @@ func calcTip(billAmt: Float, tipAmt: Float?) -> (total: Float, tip: Float) {
     func returnString(word: String) -> String {
         var reversedWord: String = ""
         for character in word {
-            reversedWord = reversedWord + character
+            reversedWord = reversedWord + String(character)
         }
         return reversedWord + word
     }
