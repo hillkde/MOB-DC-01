@@ -8,14 +8,27 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class TableViewController: UITableViewController, Campus {
     var gaCampuses = ["Washington DC", "New York", "Los Angeles", "Hong Kong", "Atlanta"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    }
+    
+    @IBAction func addCampusButton(sender: AnyObject) {
+        
+        var addVC = self.storyboard?.instantiateViewControllerWithIdentifier("addVC") as AddViewController
+        addVC.delegate = self
+//        self = current state
+        self.presentViewController(addVC, animated: true, completion: nil)
+    }
+    
+    func addCampusToArray(campusName: String) {
+        self.gaCampuses.append(campusName)
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
 
@@ -28,10 +41,8 @@ class TableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
-    /*
-    6. Return the array size under the tableView that has the numberOfRowsInSection paremeter. Ex: */
+
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // Sets the number of cells in the table to equal the number of items in our array
         return self.gaCampuses.count
     }
     
@@ -64,15 +75,16 @@ class TableViewController: UITableViewController {
 //indexpath.row -- row we are swiping on
     
     // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
+//    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+//        if editingStyle == .Delete {
+//            // Delete the row from the data source
+//            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+//        } else if editingStyle == .Insert {
+//            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+//        }    
+//    }
 
+    
     
     /*
     // Override to support rearranging the table view.

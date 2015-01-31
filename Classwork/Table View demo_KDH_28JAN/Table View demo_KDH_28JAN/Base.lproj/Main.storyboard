@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Kec-nk-WGJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EvH-s8-lkX">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -42,8 +42,91 @@
                             <outlet property="delegate" destination="Kec-nk-WGJ" id="LQm-3m-C5K"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="D8N-dQ-ww0">
+                        <barButtonItem key="rightBarButtonItem" title="Add Campus" id="Uj8-Zd-rGj">
+                            <connections>
+                                <action selector="addCampusButton:" destination="Kec-nk-WGJ" id="EZO-hZ-NOE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nEs-3D-Nta" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1923" y="312"/>
+        </scene>
+        <!--Add View Controller-->
+        <scene sceneID="1Fl-nP-wm7">
+            <objects>
+                <viewController storyboardIdentifier="addVC" id="NqX-5L-543" customClass="AddViewController" customModule="Table_View_demo_KDH_28JAN" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WhJ-Xk-6WD"/>
+                        <viewControllerLayoutGuide type="bottom" id="ldR-ER-Tuf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aaA-Yz-4t5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nxq-Wu-s7Y">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="104" y="102" width="200" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkE-B1-weT">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Add and go back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="112" y="201" width="176" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="addAndGoBack:" destination="NqX-5L-543" eventType="touchUpInside" id="RS4-Wu-Mq8"/>
+                                    <action selector="addGoBack:" destination="NqX-5L-543" eventType="touchUpInside" id="y7l-8Y-CO9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="nxq-Wu-s7Y"/>
+                                <exclude reference="pkE-B1-weT"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="nxq-Wu-s7Y"/>
+                                <include reference="pkE-B1-weT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addTextBox" destination="nxq-Wu-s7Y" id="Dpc-A9-wSL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="itS-lL-32o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2611.5" y="312"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fXb-gU-Bye">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EvH-s8-lkX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v08-kC-paf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Kec-nk-WGJ" kind="relationship" relationship="rootViewController" id="FbN-ea-9k7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VXi-yN-jZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1005" y="312"/>
         </scene>
