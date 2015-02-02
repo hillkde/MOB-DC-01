@@ -8,29 +8,34 @@
 
 import UIKit
 
-class TableViewController_ToDoList_28JAN: UITableViewController {
+class TableViewController_ToDoList_28JAN: UITableViewController, List {
     
-    var toDoList = ["buy computer", "buy lean book", "watch movie", "homework", "clean house"]
+    var toDoList = ["workout", "buy book", "watch football", "homework", "clean house"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
+    @IBAction func addItemButton(sender: AnyObject) {
+        var addVC =
+        self.storyboard?.instantiateViewControllerWithIdentifier("addVC") as AddViewController
+        addVC.delegate = self
+        self.presentViewController(addVC, animated: true, completion: nil)
+    }
+    
+    func addItemToArray(itemName: String) {
+        self.toDoList.append(itemName)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-    // MARK: - Table view data source
-
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
         return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
         return self.toDoList.count
     }
     
@@ -39,13 +44,12 @@ class TableViewController_ToDoList_28JAN: UITableViewController {
         // Sets each cell to equal each item in the array
         
         if indexPath.row % 2 == 0 {
-            cell.backgroundColor = UIColor.pinkColor()
+            cell.backgroundColor = UIColor.blueColor()
         }
         //indexpath (method) = where the cell is right now
         
         cell.textLabel?.text = self.toDoList[indexPath.row]
         return cell
-        
     }
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
@@ -55,12 +59,12 @@ class TableViewController_ToDoList_28JAN: UITableViewController {
         }
     }
     
+    
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return NO if you do not want the specified item to be editable.
         return true
     }
-
 
     /*
     // Override to support rearranging the table view.
@@ -86,5 +90,4 @@ class TableViewController_ToDoList_28JAN: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

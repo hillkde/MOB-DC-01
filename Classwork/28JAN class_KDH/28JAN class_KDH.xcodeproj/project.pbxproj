@@ -14,6 +14,7 @@
 		081A6BB51A79B31E009A3677 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 081A6BB31A79B31E009A3677 /* LaunchScreen.xib */; };
 		081A6BC11A79B31E009A3677 /* _8JAN_class_KDHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081A6BC01A79B31E009A3677 /* _8JAN_class_KDHTests.swift */; };
 		081A6BFB1A79C15E009A3677 /* TableViewController_ToDoList_28JAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081A6BFA1A79C15E009A3677 /* TableViewController_ToDoList_28JAN.swift */; };
+		084C8DEB1A7D9F0600F05D09 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084C8DEA1A7D9F0600F05D09 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		081A6BBF1A79B31E009A3677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		081A6BC01A79B31E009A3677 /* _8JAN_class_KDHTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _8JAN_class_KDHTests.swift; sourceTree = "<group>"; };
 		081A6BFA1A79C15E009A3677 /* TableViewController_ToDoList_28JAN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController_ToDoList_28JAN.swift; path = ../../TableViewController_ToDoList_28JAN.swift; sourceTree = "<group>"; };
+		084C8DEA1A7D9F0600F05D09 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				081A6BB11A79B31E009A3677 /* Images.xcassets */,
 				081A6BB31A79B31E009A3677 /* LaunchScreen.xib */,
 				081A6BA81A79B31E009A3677 /* Supporting Files */,
+				084C8DEA1A7D9F0600F05D09 /* AddViewController.swift */,
 			);
 			path = "28JAN class_KDH";
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				081A6BFB1A79C15E009A3677 /* TableViewController_ToDoList_28JAN.swift in Sources */,
 				081A6BAD1A79B31E009A3677 /* ViewController.swift in Sources */,
+				084C8DEB1A7D9F0600F05D09 /* AddViewController.swift in Sources */,
 				081A6BAB1A79B31E009A3677 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +413,7 @@
 				081A6BC61A79B31E009A3677 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		081A6BC71A79B31E009A3677 /* Build configuration list for PBXNativeTarget "28JAN class_KDHTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				081A6BC91A79B31E009A3677 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

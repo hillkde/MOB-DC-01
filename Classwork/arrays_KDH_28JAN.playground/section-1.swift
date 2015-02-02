@@ -4,7 +4,7 @@ import UIKit
 
 //like integers or strings - they are a type, so must define var
 
-var myArray = [1, 4 10, 15, 20]
+var myArray = [1, 4, 10, 15, 20]
 //10 is #2 in this array
 
 var secondArray: [Int] = []

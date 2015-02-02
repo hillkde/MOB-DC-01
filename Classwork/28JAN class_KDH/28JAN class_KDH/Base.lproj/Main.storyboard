@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1VP-9R-CNp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PI4-J9-rz3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -43,12 +43,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="219" y="299"/>
+            <point key="canvasLocation" x="-960" y="328"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Table View Controller To Do List28JAN-->
         <scene sceneID="hq9-TM-dO5">
             <objects>
-                <tableViewController id="1VP-9R-CNp" sceneMemberID="viewController">
+                <tableViewController id="1VP-9R-CNp" customClass="TableViewController_ToDoList_28JAN" customModule="_8JAN_class_KDH" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7CE-cl-muq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,6 +58,30 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gce-42-1aa" id="D6u-3k-dBq">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rm9-Jn-RL0">
+                                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                            <state key="normal" title="Add Item">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="312" y="8" width="80" height="30"/>
+                                            </variation>
+                                            <connections>
+                                                <action selector="addItemButton:" destination="1VP-9R-CNp" eventType="touchUpInside" id="roH-Ti-tdc"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="rm9-Jn-RL0"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="rm9-Jn-RL0"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -66,10 +90,85 @@
                             <outlet property="delegate" destination="1VP-9R-CNp" id="qEm-RP-22u"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="KvE-RG-L5A"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhS-7g-fzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="909" y="299"/>
+            <point key="canvasLocation" x="1846.5" y="299"/>
+        </scene>
+        <!--Add View Controller-->
+        <scene sceneID="o9d-7C-1dq">
+            <objects>
+                <viewController storyboardIdentifier="addVC" id="HzH-OI-JnL" customClass="AddViewController" customModule="_8JAN_class_KDH" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nm9-Fr-AJC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zqy-fb-46g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iOx-c0-vOT">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O9j-aT-XL5">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="83" y="143" width="235" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8MA-JI-Tl4">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Add and Go Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="124" y="266" width="152" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="addAndGoBack:" destination="HzH-OI-JnL" eventType="touchUpInside" id="B1c-FT-5UV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="O9j-aT-XL5"/>
+                                <exclude reference="8MA-JI-Tl4"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="O9j-aT-XL5"/>
+                                <include reference="8MA-JI-Tl4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="addTextBox" destination="O9j-aT-XL5" id="f2W-yu-f6E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P8j-qy-lxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2497.5" y="299"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dd2-F1-0pA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PI4-J9-rz3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5s0-ek-zX7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1VP-9R-CNp" kind="relationship" relationship="rootViewController" id="Fjv-6x-5n2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="98l-Y9-gc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1083" y="299"/>
         </scene>
     </scenes>
 </document>
