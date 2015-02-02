@@ -8,13 +8,15 @@
 
 import UIKit
 
-class EventsTableViewController: UITableViewController {
+class EventsTableViewController: UITableViewController, EventProtocol {
     // event array
     var arrEvents:[Event] = []
 
-    
     @IBAction func addButton(sender: AnyObject) {
+        
         let addEventVC = self.storyboard?.instantiateViewControllerWithIdentifier("addEventVC") as AddEventViewController
+        
+        var addEventViewController.delegate = self
         
         let navigationController = UINavigationController(rootViewController: addEventVC)
         
@@ -22,11 +24,11 @@ class EventsTableViewController: UITableViewController {
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return arrEvents
     }
 
     

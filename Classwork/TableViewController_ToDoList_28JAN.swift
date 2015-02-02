@@ -16,7 +16,7 @@ class TableViewController_ToDoList_28JAN: UITableViewController, List {
         super.viewDidLoad()
     }
     
-    @IBAction func addItemButton(sender: AnyObject) {
+    @IBAction func addButton(sender: AnyObject) {
         var addVC =
         self.storyboard?.instantiateViewControllerWithIdentifier("addVC") as AddViewController
         addVC.delegate = self

@@ -58,30 +58,6 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gce-42-1aa" id="D6u-3k-dBq">
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rm9-Jn-RL0">
-                                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                            <state key="normal" title="Add Item">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="312" y="8" width="80" height="30"/>
-                                            </variation>
-                                            <connections>
-                                                <action selector="addItemButton:" destination="1VP-9R-CNp" eventType="touchUpInside" id="roH-Ti-tdc"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                    <variation key="default">
-                                        <mask key="subviews">
-                                            <exclude reference="rm9-Jn-RL0"/>
-                                        </mask>
-                                    </variation>
-                                    <variation key="widthClass=compact">
-                                        <mask key="subviews">
-                                            <include reference="rm9-Jn-RL0"/>
-                                        </mask>
-                                    </variation>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -91,7 +67,13 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="KvE-RG-L5A"/>
+                    <navigationItem key="navigationItem" id="KvE-RG-L5A">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="25X-g3-xKp">
+                            <connections>
+                                <action selector="addButton:" destination="1VP-9R-CNp" id="vUv-EK-msk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhS-7g-fzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -107,6 +89,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Zqy-fb-46g"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iOx-c0-vOT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O9j-aT-XL5">
