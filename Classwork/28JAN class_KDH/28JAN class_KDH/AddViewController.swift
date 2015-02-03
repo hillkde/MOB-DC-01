@@ -24,6 +24,7 @@ class AddViewController: UIViewController {
     
     @IBAction func addAndGoBack(sender: AnyObject) {
         self.delegate?.addItemToArray(self.addTextBox.text)
+        
     }
 
     override func didReceiveMemoryWarning() {
