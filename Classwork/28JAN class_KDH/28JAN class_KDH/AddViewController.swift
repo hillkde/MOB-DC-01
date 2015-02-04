@@ -11,20 +11,29 @@ import UIKit
 protocol List {
     func addItemToArray(itemName: String)
 }
-
+    
 class AddViewController: UIViewController {
 
     @IBOutlet weak var addTextBox: UITextField!
     
     var delegate: List?
 
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        println("Return key pressed")
+        textField.resignFirstResponder()
+        return true
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        if self.addTextBox.text == "" {
+            println("Your text field is empty")
+        }
     }
     
     @IBAction func addAndGoBack(sender: AnyObject) {
         self.delegate?.addItemToArray(self.addTextBox.text)
-        
     }
 
     override func didReceiveMemoryWarning() {

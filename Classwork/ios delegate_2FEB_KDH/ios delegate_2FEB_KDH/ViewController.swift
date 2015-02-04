@@ -13,8 +13,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
 //drag table view to yellow dot to connect, after list array
 
+    @IBOutlet weak var errorMessage: UITextField!
 
-    @IBOutlet weak var stuffTextField: UITextField!
+    @IBOutlet weak var addTextBox: UITextField!
     @IBOutlet weak var campusesTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,14 +30,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             campusesTable.hidden = true
         }
         
-        stuffTextField.delegate = self
+        addTextBox.delegate = self
     }
 //text field does not require anything because optional
     
 //    remove key board
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        println("Return key pressed!")
-        textField.resignFirstResponder()
+        if self.addTextBox.text.isEmpty {
+            println("Your Text field is empty, enter something")
+            textField.resignFirstResponder()
+            self.errorMessage.hidden = false
+        } else {
+            self.errorMessage.hidden = true
+        }
+        
+//        println("Return key pressed!")
+//        textField.resignFirstResponder()
         return true
     }
     
