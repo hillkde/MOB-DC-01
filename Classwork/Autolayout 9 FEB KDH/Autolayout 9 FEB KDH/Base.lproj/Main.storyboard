@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Autolayout_9_FEB_KDH" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LVJ-0G-ZLP">
+                                <rect key="frame" x="36" y="40" width="162" height="128"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="04A-wM-kCp"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="95" id="Fk7-U9-8Wd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="OeR-96-wPg"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="128" id="Owu-55-tvg"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="95" id="PJx-Fx-a6U"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="111" id="ixD-fa-vME"/>
+                                    <constraint firstAttribute="height" constant="128" id="nWw-py-fjR"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="162" id="tMn-OI-Udx"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="162" id="xKb-X9-GyU"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="111" id="zm1-qf-1Xm"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="04A-wM-kCp"/>
+                                        <exclude reference="Owu-55-tvg"/>
+                                        <exclude reference="ixD-fa-vME"/>
+                                        <exclude reference="tMn-OI-Udx"/>
+                                        <exclude reference="xKb-X9-GyU"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYr-j6-FSn">
+                                <rect key="frame" x="445" y="40" width="119" height="104"/>
+                                <color key="backgroundColor" red="0.99569917929999996" green="0.0" blue="0.010008290120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="7G1-s1-M4q"/>
+                                    <constraint firstAttribute="height" constant="104" id="cCA-0D-L8Z"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R5h-cv-s6g">
+                                <rect key="frame" x="58" y="218" width="119" height="104"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="5EV-wu-I2G"/>
+                                    <constraint firstAttribute="height" constant="104" id="fNA-PI-ThV"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5EV-wu-I2G"/>
+                                        <exclude reference="fNA-PI-ThV"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dC2-2v-UbI">
+                                <rect key="frame" x="127" y="403" width="346" height="30"/>
+                                <color key="backgroundColor" red="0.99569917929999996" green="0.0" blue="0.010008290120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Increase distance between Ghost and Pacman"/>
+                                <connections>
+                                    <action selector="increaseDistanceBetweenPacmanAndGhost:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ezJ-fL-lzo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R5h-cv-s6g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="42" id="10J-ht-iVN"/>
+                            <constraint firstAttribute="centerX" secondItem="dC2-2v-UbI" secondAttribute="centerX" id="9Un-1A-aSL"/>
+                            <constraint firstItem="gYr-j6-FSn" firstAttribute="width" secondItem="R5h-cv-s6g" secondAttribute="width" id="CaK-nY-eB1"/>
+                            <constraint firstItem="gYr-j6-FSn" firstAttribute="width" secondItem="R5h-cv-s6g" secondAttribute="width" id="N0c-fB-cqV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gYr-j6-FSn" secondAttribute="trailing" constant="20" id="Tjp-Bw-GR6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dC2-2v-UbI" secondAttribute="bottom" constant="167" id="fJd-WL-Vke"/>
+                            <constraint firstItem="gYr-j6-FSn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="fuv-wp-60Z"/>
+                            <constraint firstItem="gYr-j6-FSn" firstAttribute="height" secondItem="R5h-cv-s6g" secondAttribute="height" id="ghh-mx-nSn"/>
+                            <constraint firstItem="LVJ-0G-ZLP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="jRt-ic-r38"/>
+                            <constraint firstItem="R5h-cv-s6g" firstAttribute="top" secondItem="LVJ-0G-ZLP" secondAttribute="bottom" constant="50" id="sUb-aA-slz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="N0c-fB-cqV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="increaseDistanceBetweenPacmanAndGhost" destination="dC2-2v-UbI" id="xq7-G2-FIn"/>
+                        <outlet property="verticalSpacingBetweenPurpleGhostAndPacman" destination="sUb-aA-slz" id="FSJ-Bf-AcA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BQh-MU-7Hu">
+            <objects>
+                <viewController id="ck1-73-ouY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ecp-Xn-u0g"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Ob-pA-NwI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K05-gh-hZL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SD0-jj-gPf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="411" y="977"/>
+        </scene>
+    </scenes>
+</document>
