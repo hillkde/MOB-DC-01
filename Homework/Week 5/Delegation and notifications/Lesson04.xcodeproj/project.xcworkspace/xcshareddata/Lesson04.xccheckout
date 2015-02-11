@@ -5,20 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>238345B3-A6B1-46E6-B196-6D6C587CED65</string>
+	<string>E9C75E6A-BE76-4A12-8851-B9CE6BB864A4</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Prog Views_Springs and Structs_KDH_4FEB</string>
+	<string>Lesson04</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>10A52EA4FBADB6C746B5260032017E5923CCC696</key>
 		<string>https://github.com/hillkde/MOB-DC-01.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Classwork/_Prog Views_Springs and Structs_KDH_4FEB/Prog Views_Springs and Structs_KDH_4FEB.xcodeproj</string>
+	<string>Homework/Week 5/Delegation and notifications/Lesson04.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>10A52EA4FBADB6C746B5260032017E5923CCC696</key>
-		<string>../../../..</string>
+		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/hillkde/MOB-DC-01.git</string>
