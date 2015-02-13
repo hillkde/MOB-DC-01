@@ -16,7 +16,7 @@ class ViewController: UIViewController, Hangman {
     var incompleteWord = ""
     
     for letter in myWord {
-    if contains(correctGuesses, String(letter).lowercaseString){
+    if contains(correctGuesses, String(letter).lowerCaseString){
     incompleteWord += String(letter)
     incompleteWord += ""
     
@@ -28,6 +28,8 @@ class ViewController: UIViewController, Hangman {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var greyBox = UIView(frame: CGRect(x: 20, y: 20, width: 20
     }
     
     @IBAction func playGameButton(sender: AnyObject) {
