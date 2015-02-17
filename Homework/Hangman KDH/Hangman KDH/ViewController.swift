@@ -39,8 +39,8 @@ class ViewController: UIViewController, Hangman {
             self.correctGuesses.append(letter)
         } else {
             // Here we have set to box to red
-            var boxToSetToRed = self.boxes[self.guessesUsed]
-            boxToSetToRed.backgroundColor = UIColor.redColor()
+            var boxSetToRed = self.boxes[self.guessesUsed]
+            boxSetToRed.backgroundColor = UIColor.redColor()
             
             //  self.guessesUsed++
             self.guessesUsed = self.guessesUsed + 1
@@ -67,7 +67,7 @@ class ViewController: UIViewController, Hangman {
     
     func checkIfUserIsStillAlive() {
         if(self.guessesUsed == self.maxGuesses) {
-            println("you die")
+            println("Game Over!  You're out of guesses.")
         }
     }
     
@@ -80,31 +80,31 @@ class ViewController: UIViewController, Hangman {
     }
     
     func constructBoxes() {
-                var firstBox = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+                var firstBox = UIView(frame: CGRect(x: 0, y: 25, width: 20, height: 20))
                 firstBox.backgroundColor = UIColor.grayColor()
                 self.view.addSubview(firstBox)
         
-                var secondBox = UIView(frame: CGRect(x: 25, y: 0, width: 20, height: 20))
+                var secondBox = UIView(frame: CGRect(x: 25, y: 25, width: 20, height: 20))
                 secondBox.backgroundColor = UIColor.grayColor()
                 self.view.addSubview(secondBox)
         
-                var thirdBox = UIView(frame: CGRect(x: 50, y: 0, width: 20, height: 20))
+                var thirdBox = UIView(frame: CGRect(x: 50, y: 25, width: 20, height: 20))
                 thirdBox.backgroundColor = UIColor.grayColor()
                 self.view.addSubview(thirdBox)
         
-                var fourthBox = UIView(frame: CGRect(x: 75, y: 0, width: 20, height: 20))
+                var fourthBox = UIView(frame: CGRect(x: 75, y: 25, width: 20, height: 20))
                 fourthBox.backgroundColor = UIColor.grayColor()
                 self.view.addSubview(fourthBox)
         
-                var fifthBox = UIView(frame: CGRect(x: 100, y: 0, width: 20, height: 20))
+                var fifthBox = UIView(frame: CGRect(x: 100, y: 25, width: 20, height: 20))
                 fifthBox.backgroundColor = UIColor.grayColor()
                 self.view.addSubview(fifthBox)
         
-                var sixthBox = UIView(frame: CGRect(x: 125, y: 0, width: 20, height: 20))
+                var sixthBox = UIView(frame: CGRect(x: 125, y: 25, width: 20, height: 20))
                 sixthBox.backgroundColor = UIColor.grayColor()
                 self.view.addSubview(sixthBox)
         
-                var seventhBox = UIView(frame: CGRect(x: 150, y: 0, width: 20, height: 20))
+                var seventhBox = UIView(frame: CGRect(x: 150, y: 25, width: 20, height: 20))
                 seventhBox.backgroundColor = UIColor.grayColor()
                 self.view.addSubview(seventhBox)
         
@@ -116,41 +116,7 @@ class ViewController: UIViewController, Hangman {
         self.boxes.append(sixthBox)
         self.boxes.append(seventhBox)
     }
-        
-//        if wrongGuessesCount == 1 {
-//            self.firstBox.backgroundColor = UIColor.redColor()
-//        }
-//        
-//        if wrongGuessesCount == 2 {
-//            self.secondBox.backgroundColor = UIColor.redColor()
-//        }
-//        
-//        if wrongGuessesCount == 3 {
-//            self.thirdBox.backgroundColor = UIColor.redColor()
-//        }
-//        
-//        if wrongGuessesCount == 4 {
-//            self.fourthBox.backgroundColor = UIColor.redColor()
-//        }
-//        
-//        if wrongGuessesCount == 5 {
-//            self.fifthBox.backgroundColor = UIColor.redColor()
-//        }
-//        
-//        if wrongGuessesCount == 6 {
-//            self.sixthBox.backgroundColor = UIColor.redColor()
-//        }
-//
-//        if wrongGuessesCount == 7 {
-//            self.seventhBox.backgroundColor = UIColor.redColor()
-//        }
-    
-    //            self.correctGuesses.append(letter)
-    //            return self.correctGuesses.count
 
-    //            self.wrongGuesses.append(letter)
-    //            return self.wrongGuesses.count
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

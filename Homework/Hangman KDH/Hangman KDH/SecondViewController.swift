@@ -9,43 +9,39 @@
 import UIKit
 
 protocol Hangman {
-//    how I get the Letter and Wrong guesses to add to different arrays in VC?
+
     func addLetterToArray(letter: String)
 }
 
 class SecondViewController: UIViewController {
     
+    var maxGuesses = 7
+    var guessesUsed = 0
+    
     @IBOutlet weak var guessTextBox: UITextField!
     
     var delegate: Hangman?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "gameOverOutOfGuesses", name: "seventhGuess", object: nil)
-    }
-    
-    func gameOverOutOfGuesses(notification: NSNotification) {
-        println("Game Over")
-    }
-    
-//    func addLetterToArray(letter: String) {
-//        self.correctGuesses.append(letter)
-//        return self.correctGuesses.count
-//    }
-//    
-//    func wrongGuessesToArray(letter: String) {
-//        self.wrongGuesses.append(letter)
-//        return self.wrongGuesses.count
-//    }
-    
     @IBAction func guessAndGoBack(sender: UIButton) {
         self.delegate?.addLetterToArray(self.guessTextBox.text)
         self.dismissViewControllerAnimated(true, completion: nil)
+        NSNotificationCenter.defaultCenter().postNotificationName("gameOver", object: nil)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "gameOver", name: "maxGuess", object: nil)
+    }
+    
+    func gameOverOutOfGuesses(notification: NSNotification) {
+        if(self.guessesUsed == self.maxGuesses) {
+        println("Game Over!")
+    }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+        
 }
