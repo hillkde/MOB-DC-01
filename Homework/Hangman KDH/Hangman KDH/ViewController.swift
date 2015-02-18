@@ -25,7 +25,9 @@ class ViewController: UIViewController, Hangman {
     @IBOutlet weak var correctText: UITextField!
     @IBOutlet weak var wrongGuessLabel: UILabel!
     @IBOutlet weak var remainingText: UITextField!
-
+    @IBOutlet weak var gameButton: UIButton!
+    @IBOutlet weak var gameOverLabel: UILabel!
+    
     
     @IBAction func playGameButton(sender: AnyObject) {
         var guessVC =
@@ -61,22 +63,28 @@ class ViewController: UIViewController, Hangman {
                 localIncomplete += "_ "
             }
         }
-        
         return localIncomplete
     }
     
     func checkIfUserIsStillAlive() {
         if(self.guessesUsed == self.maxGuesses) {
-            println("Game Over!  You're out of guesses.")
+        NSNotificationCenter.defaultCenter().postNotificationName("maxGuess", object: nil)
         }
     }
     
+    func gameOverOutOfGuesses(notification: NSNotification) {
+        println("Game Over!  You're out of guesses.")
+        self.gameButton.removeFromSuperview()
+        self.gameOverLabel.hidden = false
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.remainingText.text = "\(self.maxGuesses)"
         
         constructBoxes()
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "gameOverOutOfGuesses:", name: "maxGuess", object: nil)
     }
     
     func constructBoxes() {

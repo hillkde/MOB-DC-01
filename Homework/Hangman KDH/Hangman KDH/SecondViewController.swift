@@ -25,23 +25,13 @@ class SecondViewController: UIViewController {
     @IBAction func guessAndGoBack(sender: UIButton) {
         self.delegate?.addLetterToArray(self.guessTextBox.text)
         self.dismissViewControllerAnimated(true, completion: nil)
-        NSNotificationCenter.defaultCenter().postNotificationName("gameOver", object: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "gameOver", name: "maxGuess", object: nil)
-    }
-    
-    func gameOverOutOfGuesses(notification: NSNotification) {
-        if(self.guessesUsed == self.maxGuesses) {
-        println("Game Over!")
-    }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-        
 }
