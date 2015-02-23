@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Calculator KDH
+//  NEW Midterm Calculator
 //
-//  Created by Kathryn Hill on 2/17/15.
+//  Created by Kathryn Hill on 2/21/15.
 //  Copyright (c) 2015 Kathryn Hill. All rights reserved.
 //
 

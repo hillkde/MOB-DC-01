@@ -1,15 +1,15 @@
 //
-//  Calculator_KDHTests.swift
-//  Calculator KDHTests
+//  NEW_Midterm_CalculatorTests.swift
+//  NEW Midterm CalculatorTests
 //
-//  Created by Kathryn Hill on 2/17/15.
+//  Created by Kathryn Hill on 2/21/15.
 //  Copyright (c) 2015 Kathryn Hill. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class Calculator_KDHTests: XCTestCase {
+class NEW_Midterm_CalculatorTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

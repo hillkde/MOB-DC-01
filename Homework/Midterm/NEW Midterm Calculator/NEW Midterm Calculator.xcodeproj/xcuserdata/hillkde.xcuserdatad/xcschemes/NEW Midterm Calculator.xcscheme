@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "08AAFD8F1A939FB000E2C90B"
-               BuildableName = "Calculator KDH.app"
-               BlueprintName = "Calculator KDH"
-               ReferencedContainer = "container:Calculator KDH.xcodeproj">
+               BlueprintIdentifier = "08BA563B1A99075E00BDE089"
+               BuildableName = "NEW Midterm Calculator.app"
+               BlueprintName = "NEW Midterm Calculator"
+               ReferencedContainer = "container:NEW Midterm Calculator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "08AAFDA41A939FB000E2C90B"
-               BuildableName = "Calculator KDHTests.xctest"
-               BlueprintName = "Calculator KDHTests"
-               ReferencedContainer = "container:Calculator KDH.xcodeproj">
+               BlueprintIdentifier = "08BA56501A99075E00BDE089"
+               BuildableName = "NEW Midterm CalculatorTests.xctest"
+               BlueprintName = "NEW Midterm CalculatorTests"
+               ReferencedContainer = "container:NEW Midterm Calculator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "08AAFDA41A939FB000E2C90B"
-               BuildableName = "Calculator KDHTests.xctest"
-               BlueprintName = "Calculator KDHTests"
-               ReferencedContainer = "container:Calculator KDH.xcodeproj">
+               BlueprintIdentifier = "08BA56501A99075E00BDE089"
+               BuildableName = "NEW Midterm CalculatorTests.xctest"
+               BlueprintName = "NEW Midterm CalculatorTests"
+               ReferencedContainer = "container:NEW Midterm Calculator.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "08AAFD8F1A939FB000E2C90B"
-            BuildableName = "Calculator KDH.app"
-            BlueprintName = "Calculator KDH"
-            ReferencedContainer = "container:Calculator KDH.xcodeproj">
+            BlueprintIdentifier = "08BA563B1A99075E00BDE089"
+            BuildableName = "NEW Midterm Calculator.app"
+            BlueprintName = "NEW Midterm Calculator"
+            ReferencedContainer = "container:NEW Midterm Calculator.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "08AAFD8F1A939FB000E2C90B"
-            BuildableName = "Calculator KDH.app"
-            BlueprintName = "Calculator KDH"
-            ReferencedContainer = "container:Calculator KDH.xcodeproj">
+            BlueprintIdentifier = "08BA563B1A99075E00BDE089"
+            BuildableName = "NEW Midterm Calculator.app"
+            BlueprintName = "NEW Midterm Calculator"
+            ReferencedContainer = "container:NEW Midterm Calculator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "08AAFD8F1A939FB000E2C90B"
-            BuildableName = "Calculator KDH.app"
-            BlueprintName = "Calculator KDH"
-            ReferencedContainer = "container:Calculator KDH.xcodeproj">
+            BlueprintIdentifier = "08BA563B1A99075E00BDE089"
+            BuildableName = "NEW Midterm Calculator.app"
+            BlueprintName = "NEW Midterm Calculator"
+            ReferencedContainer = "container:NEW Midterm Calculator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
