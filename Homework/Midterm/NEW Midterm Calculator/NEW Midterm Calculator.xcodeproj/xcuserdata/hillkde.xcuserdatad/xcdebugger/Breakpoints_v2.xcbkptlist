@@ -22,119 +22,31 @@
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "NEW_Midterm_Calculator.ViewController.userInput.getter : Swift.String"
+                  symbolName = "NEW_Midterm_Calculator.ViewController.__deallocating_deinit"
                   moduleName = "NEW Midterm Calculator"
                   urlString = "file:///Users/hillkde/Desktop/MOB-DC-01/Homework/Midterm/NEW%20Midterm%20Calculator/NEW%20Midterm%20Calculator/ViewController.swift"
-                  timestampString = "446353981.267832"
+                  timestampString = "446835923.86317"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
                   offsetFromSymbolStart = "12">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "NEW_Midterm_Calculator.ViewController.userInput.setter : Swift.String"
+                  symbolName = "@objc NEW_Midterm_Calculator.ViewController.__ivar_destroyer"
                   moduleName = "NEW Midterm Calculator"
                   urlString = "file:///Users/hillkde/Desktop/MOB-DC-01/Homework/Midterm/NEW%20Midterm%20Calculator/NEW%20Midterm%20Calculator/ViewController.swift"
-                  timestampString = "446353981.268073"
+                  timestampString = "446835923.863326"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "24">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NEW_Midterm_Calculator.ViewController.userInput.materializeForSet : Swift.String"
-                  moduleName = "NEW Midterm Calculator"
-                  urlString = "file:///Users/hillkde/Desktop/MOB-DC-01/Homework/Midterm/NEW%20Midterm%20Calculator/NEW%20Midterm%20Calculator/ViewController.swift"
-                  timestampString = "446353981.268255"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NEW_Midterm_Calculator.ViewController.init (NEW_Midterm_Calculator.ViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; NEW_Midterm_Calculator.ViewController"
-                  moduleName = "NEW Midterm Calculator"
-                  urlString = "file:///Users/hillkde/Desktop/MOB-DC-01/Homework/Midterm/NEW%20Midterm%20Calculator/NEW%20Midterm%20Calculator/ViewController.swift"
-                  timestampString = "446353981.268427"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "45">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NEW_Midterm_Calculator.ViewController.init (NEW_Midterm_Calculator.ViewController.Type)() -&gt; NEW_Midterm_Calculator.ViewController"
-                  moduleName = "NEW Midterm Calculator"
-                  urlString = "file:///Users/hillkde/Desktop/MOB-DC-01/Homework/Midterm/NEW%20Midterm%20Calculator/NEW%20Midterm%20Calculator/ViewController.swift"
-                  timestampString = "446353981.2686"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "34">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NEW_Midterm_Calculator.ViewController.init (NEW_Midterm_Calculator.ViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; NEW_Midterm_Calculator.ViewController"
-                  moduleName = "NEW Midterm Calculator"
-                  urlString = "file:///Users/hillkde/Desktop/MOB-DC-01/Homework/Midterm/NEW%20Midterm%20Calculator/NEW%20Midterm%20Calculator/ViewController.swift"
-                  timestampString = "446353981.268764"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "38">
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "15">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NEW Midterm Calculator/ViewController.swift"
-            timestampString = "446680518.132051"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "posNegButton(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NEW Midterm Calculator/ViewController.swift"
-            timestampString = "446680518.132051"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "posNegButton(_:)"
-            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
