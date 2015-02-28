@@ -48,7 +48,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             } else {
                 userInput = number + userInput
             }
-            calculatorDisplay.text = (userInput)
+            calculatorDisplay.text = userInput
         }
     }
     
