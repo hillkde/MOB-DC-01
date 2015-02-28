@@ -9,18 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
- 
+    
+    @IBOutlet weak var calculatorDisplay: UILabel!
+    
     var userInput:String = ""
-    var displayContent:String = ""
     var positiveValue:Bool = true
-    var pressOnce:Bool = false
-    var pressTwice:Bool = false
+    var result = 0.0
     var userIsTypingANumber:Bool = false
-    var errorCheckVariable: Bool = false
+    var errorCheckVariable:Bool = false
     var symbolForCalculation = ""
     var currentValue = 0.0
     var previousValue = 0.0
     var number:String = ""
+    
     var displayValue:Double {
         get {
             return NSNumberFormatter().numberFromString(calculatorDisplay.text!)!.doubleValue
@@ -28,8 +29,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
             calculatorDisplay.text = "\(newValue)"
         }
     }
-    
-    @IBOutlet weak var calculatorDisplay: UILabel!
     
     func orderOfValue(number: String) {
         var value = 0, currentValue = 0, previousValue = 1, result = 0, next = 0
@@ -42,14 +41,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         calculatorDisplay.text! = ("\(result)")
     }
 
-    func handleNegativeNumber(number:String) {
+    func handleNegativeNumber(number: String) {
         if number == "-" {
             if userInput.hasPrefix(number) {
                 userInput = userInput.substringFromIndex(userInput.startIndex.successor())
             } else {
                 userInput = number + userInput
             }
-        calculatorDisplay.text = (userInput)
+            calculatorDisplay.text = (userInput)
         }
     }
     
@@ -68,31 +67,31 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func addButton(sender: AnyObject) {
             var result = (currentValue + previousValue)
             calculatorDisplay.text! = "\(result)"
-    }
+        }
 
     @IBAction func subButton(sender: AnyObject) {
-            var result = currentValue - previousValue
+            var result = (currentValue - previousValue)
             calculatorDisplay.text! = "\(result)"
-    }
+        }
     
     @IBAction func multiplyButton(sender: AnyObject) {
-            var result = currentValue * previousValue
+            var result = (currentValue * previousValue)
             calculatorDisplay.text! = "\(result)"
         }
     
     @IBAction func divisionButton(sender: AnyObject) {
-            var result = currentValue / previousValue
+            var result = (currentValue/previousValue)
             calculatorDisplay.text! = "\(result)"
         }
     
     @IBAction func percentageButton(sender: AnyObject) {
-            var result = currentValue/100
+            var result = (currentValue/100)
             calculatorDisplay.text = "\(result)"
         }
     
     @IBAction func posNegButton(sender: AnyObject) {
         if positiveValue == false {
-            calculatorDisplay.text = "\(positiveValue) * -1)"
+            calculatorDisplay.text = ("\(positiveValue) * -1")
         } else {
             positiveValue == true
         }
@@ -111,30 +110,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-
-    func handleInput(number: String) -> Int {
-        return number.toInt()!
-        //        userIsTypingANumber = false
-        let symbol = self.symbolForCalculation
-        self.userIsTypingANumber = true
-    }
-//
-//    func calculateEquation() {
-//        userIsTypingANumber = false
-//        var result = 0.0
-//        let symbol = self.symbolForCalculation
-    
-    func appendDigit(sender: UIButton) {
+    func handleInput(number: String) {
         errorCheckVariable = false
-        let digit = sender.currentTitle!
         if userIsTypingANumber {
-            calculatorDisplay.text = calculatorDisplay.text! + digit
+            calculatorDisplay.text = calculatorDisplay.text! + number
         } else {
-            calculatorDisplay.text = digit
+            calculatorDisplay.text = number
             userIsTypingANumber = true
         }
     }
-
     
 //Number Buttons
     @IBAction func zeroButton(sender: AnyObject) {
