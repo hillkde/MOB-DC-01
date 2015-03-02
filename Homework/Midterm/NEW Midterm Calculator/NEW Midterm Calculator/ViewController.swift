@@ -16,20 +16,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var positiveValue:Bool = true
     var result = 0.0
     var userIsTypingANumber:Bool = false
-    var errorCheckVariable:Bool = false
-    var symbolForCalculation = ""
     var currentValue = 0.0
     var previousValue = 0.0
     var number:String = ""
     var operation = ""
-    
-    var displayValue:Double {
-        get {
-            return NSNumberFormatter().numberFromString(calculatorDisplay.text!)!.doubleValue
-        } set {
-            calculatorDisplay.text = "\(newValue)"
-        }
-    }
 
     func handleNegativeNumber(number: String) {
         if number == "-" {
@@ -45,53 +35,53 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func equalsButton(sender: AnyObject) {
         if self.operation == "adding" {
             self.calculatorDisplay.text = "\(self.currentValue + self.previousValue)"
-            self.currentValue = self.currentValue + self.previousValue
+            self.currentValue = (self.currentValue + self.previousValue)
             self.previousValue = 0
         } else if self.operation == "subtracting" {
             self.calculatorDisplay.text = "\(self.currentValue - self.previousValue)"
-            self.currentValue = self.currentValue - self.previousValue
+            self.currentValue = (self.currentValue - self.previousValue)
             self.previousValue = 0
         } else if self.operation == "multiplying" {
             self.calculatorDisplay.text = "\(self.currentValue * self.previousValue)"
-            self.currentValue = self.currentValue * self.previousValue
+            self.currentValue = (self.currentValue * self.previousValue)
             self.previousValue = 0
         } else if self.operation == "dividing" {
             self.calculatorDisplay.text = "\(self.currentValue / self.previousValue)"
-            self.currentValue = self.currentValue / self.previousValue
+            self.currentValue = (self.currentValue / self.previousValue)
             self.previousValue = 0
         }
         
-        currentValue = displayValue
+        self.currentValue = self.displayValue
         handleInput(number)
-        symbolForCalculation = sender.currentTitle!!
+        calculatorDisplay.text! = "\(result)"
     }
 
     @IBAction func addButton(sender: AnyObject) {
             self.operation = "adding"
-            var result = (currentValue + previousValue)
+            var result = (self.currentValue + self.previousValue)
             calculatorDisplay.text! = "\(result)"
         }
 
     @IBAction func subButton(sender: AnyObject) {
             self.operation = "subtracting"
-            var result = (currentValue - previousValue)
+            var result = (self.currentValue - self.previousValue)
             calculatorDisplay.text! = "\(result)"
         }
     
     @IBAction func multiplyButton(sender: AnyObject) {
             self.operation = "multiplying"
-            var result = (currentValue * previousValue)
+            var result = (self.currentValue * self.previousValue)
             calculatorDisplay.text! = "\(result)"
         }
     
     @IBAction func divisionButton(sender: AnyObject) {
             self.operation = "dividing"
-            var result = (currentValue/previousValue)
+            var result = (self.currentValue / self.previousValue)
             calculatorDisplay.text! = "\(result)"
         }
     
     @IBAction func percentageButton(sender: AnyObject) {
-            var result = (currentValue/100)
+            var result = (self.currentValue/100)
             calculatorDisplay.text = "\(result)"
         }
     
@@ -114,7 +104,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func handleInput(number: String) {
-        errorCheckVariable = false
         self.previousValue = self.currentValue
         self.currentValue = NSString(string: number).doubleValue
         self.calculatorDisplay.text = number
@@ -173,7 +162,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func decimalButton(sender: AnyObject) {
         handleInput(".")
-        self.userIsTypingANumber = true
+        self.userIsTypingANumber = false
+    }
+    
+    var displayValue:Double {
+        get {
+            return NSNumberFormatter().numberFromString(calculatorDisplay.text!)!.doubleValue
+        } set {
+            calculatorDisplay.text = "\(newValue)"
+        }
     }
     
     func textFieldShouldBeginEditing(textLabel: UITextField) -> Bool {
