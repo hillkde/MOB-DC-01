@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08BF70DB1AA5432E002EDD4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BF70DA1AA5432E002EDD4C /* AppDelegate.swift */; };
+		08BF70DD1AA5432E002EDD4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BF70DC1AA5432E002EDD4C /* ViewController.swift */; };
+		08BF70E01AA5432E002EDD4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08BF70DE1AA5432E002EDD4C /* Main.storyboard */; };
+		08BF70E21AA5432E002EDD4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08BF70E11AA5432E002EDD4C /* Images.xcassets */; };
+		08BF70E51AA5432E002EDD4C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08BF70E31AA5432E002EDD4C /* LaunchScreen.xib */; };
+		08BF70F11AA5432E002EDD4C /* Networking_example_KDHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BF70F01AA5432E002EDD4C /* Networking_example_KDHTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08BF70EB1AA5432E002EDD4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08BF70CD1AA5432E002EDD4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08BF70D41AA5432E002EDD4C;
+			remoteInfo = "Networking example KDH";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08BF70D51AA5432E002EDD4C /* Networking example KDH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Networking example KDH.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08BF70D91AA5432E002EDD4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08BF70DA1AA5432E002EDD4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08BF70DC1AA5432E002EDD4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08BF70DF1AA5432E002EDD4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08BF70E11AA5432E002EDD4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		08BF70E41AA5432E002EDD4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		08BF70EA1AA5432E002EDD4C /* Networking example KDHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Networking example KDHTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08BF70EF1AA5432E002EDD4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08BF70F01AA5432E002EDD4C /* Networking_example_KDHTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking_example_KDHTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08BF70D21AA5432E002EDD4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08BF70E71AA5432E002EDD4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08BF70CC1AA5432E002EDD4C = {
+			isa = PBXGroup;
+			children = (
+				08BF70D71AA5432E002EDD4C /* Networking example KDH */,
+				08BF70ED1AA5432E002EDD4C /* Networking example KDHTests */,
+				08BF70D61AA5432E002EDD4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08BF70D61AA5432E002EDD4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08BF70D51AA5432E002EDD4C /* Networking example KDH.app */,
+				08BF70EA1AA5432E002EDD4C /* Networking example KDHTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08BF70D71AA5432E002EDD4C /* Networking example KDH */ = {
+			isa = PBXGroup;
+			children = (
+				08BF70DA1AA5432E002EDD4C /* AppDelegate.swift */,
+				08BF70DC1AA5432E002EDD4C /* ViewController.swift */,
+				08BF70DE1AA5432E002EDD4C /* Main.storyboard */,
+				08BF70E11AA5432E002EDD4C /* Images.xcassets */,
+				08BF70E31AA5432E002EDD4C /* LaunchScreen.xib */,
+				08BF70D81AA5432E002EDD4C /* Supporting Files */,
+			);
+			path = "Networking example KDH";
+			sourceTree = "<group>";
+		};
+		08BF70D81AA5432E002EDD4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08BF70D91AA5432E002EDD4C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08BF70ED1AA5432E002EDD4C /* Networking example KDHTests */ = {
+			isa = PBXGroup;
+			children = (
+				08BF70F01AA5432E002EDD4C /* Networking_example_KDHTests.swift */,
+				08BF70EE1AA5432E002EDD4C /* Supporting Files */,
+			);
+			path = "Networking example KDHTests";
+			sourceTree = "<group>";
+		};
+		08BF70EE1AA5432E002EDD4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08BF70EF1AA5432E002EDD4C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08BF70D41AA5432E002EDD4C /* Networking example KDH */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08BF70F41AA5432E002EDD4C /* Build configuration list for PBXNativeTarget "Networking example KDH" */;
+			buildPhases = (
+				08BF70D11AA5432E002EDD4C /* Sources */,
+				08BF70D21AA5432E002EDD4C /* Frameworks */,
+				08BF70D31AA5432E002EDD4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Networking example KDH";
+			productName = "Networking example KDH";
+			productReference = 08BF70D51AA5432E002EDD4C /* Networking example KDH.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08BF70E91AA5432E002EDD4C /* Networking example KDHTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08BF70F71AA5432E002EDD4C /* Build configuration list for PBXNativeTarget "Networking example KDHTests" */;
+			buildPhases = (
+				08BF70E61AA5432E002EDD4C /* Sources */,
+				08BF70E71AA5432E002EDD4C /* Frameworks */,
+				08BF70E81AA5432E002EDD4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08BF70EC1AA5432E002EDD4C /* PBXTargetDependency */,
+			);
+			name = "Networking example KDHTests";
+			productName = "Networking example KDHTests";
+			productReference = 08BF70EA1AA5432E002EDD4C /* Networking example KDHTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08BF70CD1AA5432E002EDD4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Kathryn Hill";
+				TargetAttributes = {
+					08BF70D41AA5432E002EDD4C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					08BF70E91AA5432E002EDD4C = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 08BF70D41AA5432E002EDD4C;
+					};
+				};
+			};
+			buildConfigurationList = 08BF70D01AA5432E002EDD4C /* Build configuration list for PBXProject "Networking example KDH" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08BF70CC1AA5432E002EDD4C;
+			productRefGroup = 08BF70D61AA5432E002EDD4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08BF70D41AA5432E002EDD4C /* Networking example KDH */,
+				08BF70E91AA5432E002EDD4C /* Networking example KDHTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08BF70D31AA5432E002EDD4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08BF70E01AA5432E002EDD4C /* Main.storyboard in Resources */,
+				08BF70E51AA5432E002EDD4C /* LaunchScreen.xib in Resources */,
+				08BF70E21AA5432E002EDD4C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08BF70E81AA5432E002EDD4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08BF70D11AA5432E002EDD4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08BF70DD1AA5432E002EDD4C /* ViewController.swift in Sources */,
+				08BF70DB1AA5432E002EDD4C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08BF70E61AA5432E002EDD4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08BF70F11AA5432E002EDD4C /* Networking_example_KDHTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08BF70EC1AA5432E002EDD4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08BF70D41AA5432E002EDD4C /* Networking example KDH */;
+			targetProxy = 08BF70EB1AA5432E002EDD4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08BF70DE1AA5432E002EDD4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08BF70DF1AA5432E002EDD4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08BF70E31AA5432E002EDD4C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08BF70E41AA5432E002EDD4C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08BF70F21AA5432E002EDD4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08BF70F31AA5432E002EDD4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08BF70F51AA5432E002EDD4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Networking example KDH/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		08BF70F61AA5432E002EDD4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Networking example KDH/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		08BF70F81AA5432E002EDD4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Networking example KDHTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Networking example KDH.app/Networking example KDH";
+			};
+			name = Debug;
+		};
+		08BF70F91AA5432E002EDD4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Networking example KDHTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Networking example KDH.app/Networking example KDH";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08BF70D01AA5432E002EDD4C /* Build configuration list for PBXProject "Networking example KDH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08BF70F21AA5432E002EDD4C /* Debug */,
+				08BF70F31AA5432E002EDD4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08BF70F41AA5432E002EDD4C /* Build configuration list for PBXNativeTarget "Networking example KDH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08BF70F51AA5432E002EDD4C /* Debug */,
+				08BF70F61AA5432E002EDD4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		08BF70F71AA5432E002EDD4C /* Build configuration list for PBXNativeTarget "Networking example KDHTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08BF70F81AA5432E002EDD4C /* Debug */,
+				08BF70F91AA5432E002EDD4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08BF70CD1AA5432E002EDD4C /* Project object */;
+}
