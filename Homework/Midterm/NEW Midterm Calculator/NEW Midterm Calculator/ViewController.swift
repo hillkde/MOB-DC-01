@@ -46,14 +46,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.currentValue = (self.currentValue * self.previousValue)
             self.previousValue = 0
         } else if self.operation == "dividing" {
-            self.calculatorDisplay.text = "\(self.currentValue / self.previousValue)"
-            self.currentValue = (self.currentValue / self.previousValue)
+            self.calculatorDisplay.text = "\(self.previousValue / self.currentValue)"
+            self.currentValue = (self.previousValue / self.currentValue)
             self.previousValue = 0
         }
         
         self.currentValue = self.displayValue
-        handleInput(number)
-        calculatorDisplay.text! = "\(result)"
+        handleInput("")
+        calculatorDisplay.text = "\(result)"
     }
 
     @IBAction func addButton(sender: AnyObject) {
@@ -76,7 +76,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func divisionButton(sender: AnyObject) {
             self.operation = "dividing"
-            var result = (self.currentValue / self.previousValue)
+            var result = (self.previousValue / self.currentValue)
             calculatorDisplay.text! = "\(result)"
         }
     
@@ -169,7 +169,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         get {
             return NSNumberFormatter().numberFromString(calculatorDisplay.text!)!.doubleValue
         } set {
-            calculatorDisplay.text = "\(newValue)"
+            calculatorDisplay.text = "\(currentValue)"
         }
     }
     

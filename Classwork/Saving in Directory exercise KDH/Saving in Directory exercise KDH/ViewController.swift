@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func saveButton(sender: AnyObject) {
-        let fileManager = NSFIleManager()
+        let fileManager = NSFileManager()
         let path = fileManager.URLSForDirectory(NSSearchPathDirectory.DocumentationDirectory, inDomains: NSSearchPathDomainMask.UserDomainMask) as [NSURL]
         
         if path.count > 0 {

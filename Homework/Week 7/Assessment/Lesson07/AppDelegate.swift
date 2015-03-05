@@ -15,6 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
+        
         // Override point for customization after application launch.
         NSUserDefaults.standardUserDefaults().setObject("This is a string in user defaults!", forKey: "test_string")
         
