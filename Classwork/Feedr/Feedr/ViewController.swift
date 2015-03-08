@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class ViewController: UITableViewController, UITableViewDataSource, UITableViewDelegate {
     var tempData = ["Ena's tail is apparantly OK", "MOB Class is awesome", "Pigs sighted flying"]
 
     // Step 5: make data available here and then write self.json = jsonDict as? NSDictionary
-    var json: NSDictionary?
+    
+    var json: JSON?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +25,17 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
         if let url = NSURL(string: "http://www.reddit.com/.json") {
             let task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
                 //   Step 4: convert to dict that it can read, in case json in invalid pass as optional (most APIs are not json)
-                if let jsonDict:AnyObject = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) {
-                    self.json = jsonDict as? NSDictionary
-                }
+//               
+//                if let jsonDict:AnyObject = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) {
+////                    self.json = jsonDict as? NSDictionary
+//                }
+//  code that helps us to read json data
+                
+                let newJsonDict = JSON(data: data)
+                self.json = newJsonDict
+                
+                
+                
                 //  when info comes back, we refresh/reload the data
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     self.tableView.reloadData()
@@ -45,12 +55,13 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
         //  kind is in own level - list of articles -- kind and data are on same level because same indenttation
         //        NSDict because dictionary is type of data
         if let jsonData = self.json {
-            if let data = jsonData["data"] as? NSDictionary {
-                if let children = data["children"] as? NSArray {
-                    // need to get number of articles that are located under children
-                    return children.count
-                }
-            }
+//            if let data = jsonData["data"] as? NSDictionary {
+//                if let children = data["children"] as? NSArray {
+//                    // need to get number of articles that are located under children
+//                    return children.count
+//                }
+//            }
+            return jsonData["data"]["children"].count
         }
         
         return 0
@@ -59,23 +70,31 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell!
         if cell == nil  {
-            cell = UITableViewCell(style: .Default, reuseIdentifier: "cell")
+            cell = UITableViewCell(style: .Subtitle, reuseIdentifier: "cell")
+        }
+        
+        if let jsonDict = self.json {
+            var title = jsonDict["data"]["children"][indexPath.row]["data"]["title"].string
+            var description = jsonDict["data"]["children"][indexPath.row]["data"]["ups"].int
+            cell.textLabel?.text = title
+            cell.detailTextLabel?.text = "Number of ups: \(description!)"
         }
         
         //   Step 7: take values from children and put into tableview; child is specific article as a dictionary, located within array
-        if let jsonDict = self.json {
-            if let data = jsonDict["data"] as? NSDictionary {
-                if let children = data["children"] as? NSArray {
-                    if let child = children[indexPath.row] as? NSDictionary {
-                        if let childData = child["data"] as? NSDictionary {
-                            if let title = childData["title"] as? NSString {
-                                cell.textLabel?.text = title
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        
+//        if let jsonDict = self.json {
+//            if let data = jsonDict["data"] as? NSDictionary {
+//                if let children = data["children"] as? NSArray {
+//                    if let child = children[indexPath.row] as? NSDictionary {
+//                        if let childData = child["data"] as? NSDictionary {
+//                            if let title = childData["title"] as? NSString {
+//                                cell.textLabel?.text = title
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//        }
         
         return cell
     }
@@ -84,21 +103,28 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
     //(switch vc with segue)
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if let jsonDict = self.json {
-            if let data = jsonDict["data"] as? NSDictionary {
-                if let children = data["children"] as? NSArray {
-                    if let child = children[indexPath.row] as? NSDictionary {
-                        if let childData = child["data"] as? NSDictionary {
-                            if let permalink = childData["permalink"] as? NSString {
-                                var url = NSURL(string: "http://reddit.com" + permalink)
-                                performSegueWithIdentifier("web", sender: NSURLRequest(URL: url!))
-                            }
-                        }
-                    }
-                }
-            }
+           var permalink = jsonDict["data"]["children"][indexPath.row]["data"]["permalink"].string
+            var url = NSURL(string: "http://reddit.com" + permalink!)
+            performSegueWithIdentifier("web", sender: NSURLRequest(URL: url!))
+          
+//            if let data = jsonDict["data"] as? NSDictionary {
+//                if let children = data["children"] as? NSArray {
+//                    if let child = children[indexPath.row] as? NSDictionary {
+//                        if let childData = child["data"] as? NSDictionary {
+//                            if let permalink = childData["permalink"] as? NSString {
+//                                var url = NSURL(string: "http://reddit.com" + permalink)
+//            
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//    }
+//    
         }
     }
-    
+            
     //executes before moving to next VC
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let request = sender as? NSURLRequest {
