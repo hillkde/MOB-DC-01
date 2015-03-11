@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Feedr
+//  FINAL App KDH
 //
-//  Created by Tedi Konda on 3/2/15.
-//  Copyright (c) 2015 Tedi Konda. All rights reserved.
+//  Created by Kathryn Hill on 3/7/15.
+//  Copyright (c) 2015 Kathryn Hill. All rights reserved.
 //
 
 import UIKit
@@ -12,6 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
