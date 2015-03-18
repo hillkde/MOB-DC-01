@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     @IBOutlet weak var qubeView: UILabel!
     
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func loginButton(sender: AnyObject) {
-        performSegueWithIdentifier("nextVC", sender: self)
+//        performSegueWithIdentifier("nextVC", sender: self)
         let autoresizingMask = UIViewAutoresizing.FlexibleBottomMargin
     }
     
@@ -33,6 +33,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tabBarController?.tabBar.hidden = true
+        self.navigationController?.navigationBar.hidden = true
     }
 
     override func didReceiveMemoryWarning() {

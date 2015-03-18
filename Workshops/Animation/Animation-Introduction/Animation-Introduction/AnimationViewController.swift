@@ -54,6 +54,11 @@ class AnimationViewController: UIViewController {
     }
     
     @IBAction func facebookPop(sender: UIBarButtonItem) {
+//        let animation = POPSpringAnimation(propertyNamed: kPOPViewScaleXY)
+////        spring = how fast it moves
+//        animation.springBounciness = 20
+//        animation.springSpeed = 5.0
+//        animation.toValue
         
     }
     

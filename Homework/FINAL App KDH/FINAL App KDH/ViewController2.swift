@@ -63,14 +63,14 @@ class ViewController2: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if segue.identifier == "submitButton" {
             var svc = segue.destinationViewController as ViewController4
-            svc.firstNameBox = firstNameLabel.text
-            svc.middleName = middleNameLabel.text
-            svc.lastNameBox = lastNameLabel.text
-            svc.titleBox = titleLabel.text
-            svc.emailBox = emailLabel.text
-            svc.mobileBox = mobileLabel.text
-            svc.otherNumberBox = otherNumberLabel.text
-            svc.companyBox = companyLabel.text
+            svc.firstNameLabel.text = firstNameBox.text
+//            svc.middleName = middleNameLabel.text
+//            svc.lastNameBox = lastNameLabel.text
+//            svc.titleBox = titleLabel.text
+//            svc.emailBox = emailLabel.text
+//            svc.mobileBox = mobileLabel.text
+//            svc.otherNumberBox = otherNumberLabel.text
+//            svc.companyBox = companyLabel.text
         }
     }
 

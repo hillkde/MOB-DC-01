@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xkz-Tu-8OS">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FINAL_App_KDH" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="FINAL_App_KDH" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -32,7 +32,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DA-EV-NtU">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DA-EV-NtU">
                                 <rect key="frame" x="263" y="433" width="79" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="New User">
@@ -44,13 +44,13 @@
                                     <segue destination="fhU-Rg-rfp" kind="modal" identifier="newUserVC" modalTransitionStyle="coverVertical" id="pz2-fv-RGa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUBE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kda-V4-tDu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="QUBE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kda-V4-tDu">
                                 <rect key="frame" x="269" y="65" width="82" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18f-F2-fYG">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18f-F2-fYG">
                                 <rect key="frame" x="108" y="363" width="384" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Login">
@@ -59,7 +59,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wc2-4J-Nl8"/>
-                                    <segue destination="Dsv-gM-GTh" kind="modal" identifier="nextVC" modalTransitionStyle="flipHorizontal" id="rGH-C8-yy5"/>
+                                    <segue destination="Dsv-gM-GTh" kind="show" identifier="nextVC" id="rGH-C8-yy5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -99,6 +99,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="WfS-gV-Eyr"/>
                     <connections>
                         <outlet property="passwordTextField" destination="pNT-TV-8Ln" id="0BN-jZ-uWg"/>
                         <outlet property="qubeView" destination="Kda-V4-tDu" id="j5J-Qk-UGR"/>
@@ -107,7 +108,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="422" y="-212"/>
+            <point key="canvasLocation" x="1234" y="-212"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="dMB-8f-Evn">
+            <objects>
+                <tabBarController id="xkz-Tu-8OS" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="gie-kx-UbT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="IOt-dn-Yjw" kind="relationship" relationship="viewControllers" id="k1g-0n-6SO"/>
+                        <segue destination="9br-qy-o6V" kind="relationship" relationship="viewControllers" id="aP3-Zx-s3O"/>
+                        <segue destination="UQA-3j-zI0" kind="relationship" relationship="viewControllers" id="Zsq-99-558"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzp-3p-p02" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1091" y="508"/>
         </scene>
         <!--newUserVC-->
         <scene sceneID="Qz7-rd-g2B">
@@ -232,7 +253,26 @@
             </objects>
             <point key="canvasLocation" x="422" y="558"/>
         </scene>
-        <!--View Controller4-->
+        <!--Item-->
+        <scene sceneID="3FR-q1-E74">
+            <objects>
+                <viewController id="UQA-3j-zI0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Sl-p7-A9V"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wks-hL-7cY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ung-uf-Dvx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="XmI-Tf-Mjv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zyi-h9-p0t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="177" y="1260"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="TqE-bh-P4o">
             <objects>
                 <viewController storyboardIdentifier="completeCardVC" id="9br-qy-o6V" customClass="ViewController4" customModule="FINAL_App_KDH" customModuleProvider="target" sceneMemberID="viewController">
@@ -304,6 +344,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="k3f-Dr-Om4"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="cardSideOne" destination="v9Y-7K-6Zm" id="jlC-zD-0tv"/>
@@ -361,6 +402,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="9i4-YV-x88"/>
                     <connections>
                         <outlet property="addBarItem" destination="FHs-vI-yAX" id="gHk-yG-kA0"/>
                         <outlet property="cardView" destination="4zT-Ll-rgo" id="JCV-Eb-kql"/>
@@ -371,7 +413,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t0S-3T-XCE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1167" y="-212"/>
+            <point key="canvasLocation" x="1929" y="-212"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="USF-rR-sRY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IOt-dn-Yjw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="hpD-Yt-YGu"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dF8-bf-8sb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7xc-RT-1PG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4fJ-nR-Bzs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="-212"/>
         </scene>
     </scenes>
     <resources>
@@ -380,4 +441,7 @@
         <image name="sample-401-globe.png" width="28" height="28"/>
         <image name="sample-881-globe.png" width="28" height="28"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="aP3-Zx-s3O"/>
+    </inferredMetricsTieBreakers>
 </document>
