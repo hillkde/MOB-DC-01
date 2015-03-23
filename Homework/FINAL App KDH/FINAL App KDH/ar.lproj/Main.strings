@@ -1,0 +1,174 @@
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "000-Gh-IwW"; */
+"000-Gh-IwW.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "13u-eK-AqQ"; */
+"13u-eK-AqQ.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "Login"; ObjectID = "18f-F2-fYG"; */
+"18f-F2-fYG.normalTitle" = "تسجيل الدخول";
+
+/* Class = "IBUIButton"; normalTitle = "New User"; ObjectID = "1DA-EV-NtU"; */
+"1DA-EV-NtU.normalTitle" = "مستخدم جديد";
+
+/* Class = "IBUILabel"; text = "Kathryn"; ObjectID = "2CH-53-lHd"; */
+"2CH-53-lHd.text" = "كاثرين";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "2xB-tv-ZB6"; */
+"2xB-tv-ZB6.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "6ba-Co-L38"; */
+"6ba-Co-L38.text" = "Label";
+
+/* Class = "IBUITabBarItem"; title = "Home"; ObjectID = "9i4-YV-x88"; */
+"9i4-YV-x88.title" = "منزل";
+
+/* Class = "IBUILabel"; text = "Mobile: (517) 881-9520"; ObjectID = "9tq-rm-IK4"; */
+"9tq-rm-IK4.text" = "الهاتف المحمول: (۵۱۷) ۰۲۵۹۸۸۱-";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "Adt-TK-0gC"; */
+"Adt-TK-0gC.text" = "Label";
+
+/* Class = "IBUITextField"; placeholder = "Type of sides (drop down menu)"; ObjectID = "DCX-lo-zRl"; */
+"DCX-lo-zRl.placeholder" = "جانب";
+
+/* Class = "IBUIViewController"; title = "nextVC"; ObjectID = "Dsv-gM-GTh"; */
+"Dsv-gM-GTh.title" = "nextVC";
+
+/* Class = "IBUITabBarItem"; title = "Add"; ObjectID = "FHs-vI-yAX"; */
+"FHs-vI-yAX.title" = "إضافة";
+
+/* Class = "IBUITextField"; placeholder = "Last Name"; ObjectID = "GpE-gp-cyx"; */
+"GpE-gp-cyx.placeholder" = "اسم العائلة";
+
+/* Class = "IBUILabel"; text = "hillkde@gmail.com"; ObjectID = "HdT-yO-pcN"; */
+"HdT-yO-pcN.text" = "hillkde@gmail.com";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "KNq-po-M2L"; */
+"KNq-po-M2L.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "Back"; ObjectID = "KUg-hf-X0m"; */
+"KUg-hf-X0m.normalTitle" = "عد";
+
+/* Class = "IBUILabel"; text = "QUBE Card"; ObjectID = "Kda-V4-tDu"; */
+"Kda-V4-tDu.text" = "بطاقة QUBE";
+
+/* Class = "IBUITextField"; placeholder = "First Qube? (drop down menu)"; ObjectID = "LU9-sc-Qsq"; */
+"LU9-sc-Qsq.placeholder" = "أولا Qube?";
+
+/* Class = "IBUITextField"; placeholder = "Number of sides (drop down menu)"; ObjectID = "N4V-95-aH3"; */
+"N4V-95-aH3.placeholder" = "عدد من الجانبين";
+
+/* Class = "IBUITabBarItem"; title = "QUBE Me"; ObjectID = "NYE-oF-kmY"; */
+"NYE-oF-kmY.title" = "QUBE أنا";
+
+/* Class = "IBUITextField"; placeholder = "Languages (drop down menu)"; ObjectID = "Oex-h6-9IQ"; */
+"Oex-h6-9IQ.placeholder" = "اللغات";
+
+/* Class = "IBUITextField"; placeholder = "Other Phone"; ObjectID = "PSw-Kj-umR"; */
+"PSw-Kj-umR.placeholder" = "هاتف آخر";
+
+/* Class = "IBUIViewController"; title = "mapVC"; ObjectID = "QIF-mf-jIe"; */
+"QIF-mf-jIe.title" = "mapVC";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "TI5-W4-sB6"; */
+"TI5-W4-sB6.normalTitle" = "Button";
+
+/* Class = "IBUITabBarItem"; title = "Directory"; ObjectID = "UER-Fp-fOX"; */
+"UER-Fp-fOX.title" = "دليل";
+
+/* Class = "IBUIViewController"; title = "directoryVC"; ObjectID = "UQA-3j-zI0"; */
+"UQA-3j-zI0.title" = "directoryVC";
+
+/* Class = "IBUITextField"; placeholder = "First Name"; ObjectID = "UzJ-mV-vdP"; */
+"UzJ-mV-vdP.placeholder" = "الاسم الأول";
+
+/* Class = "IBUITextField"; placeholder = "UserID"; ObjectID = "Vwq-uU-fF1"; */
+"Vwq-uU-fF1.placeholder" = "هوية المستخدم";
+
+/* Class = "IBUITabBarItem"; title = "Directory"; ObjectID = "XmI-Tf-Mjv"; */
+"XmI-Tf-Mjv.title" = "دليل";
+
+/* Class = "IBUILabel"; text = "Owner, Founder"; ObjectID = "aBd-i5-srq"; */
+"aBd-i5-srq.text" = "مؤسس ,مالك";
+
+/* Class = "IBUITextField"; placeholder = "Add Image (browse)"; ObjectID = "aWb-YT-xsB"; */
+"aWb-YT-xsB.placeholder" = "إضافة صورة";
+
+/* Class = "IBUITextField"; placeholder = "Middle Name"; ObjectID = "ac9-ur-mHn"; */
+"ac9-ur-mHn.placeholder" = "الاسم الأوسط";
+
+/* Class = "IBUITextField"; placeholder = "Mobile"; ObjectID = "emt-WO-nDG"; */
+"emt-WO-nDG.placeholder" = "الهاتف المحمول";
+
+/* Class = "IBUITextField"; placeholder = "Company"; ObjectID = "fCy-lR-v6s"; */
+"fCy-lR-v6s.placeholder" = "شركة";
+
+/* Class = "IBUIViewController"; title = "newUserVC"; ObjectID = "fhU-Rg-rfp"; */
+"fhU-Rg-rfp.title" = "newUserVC";
+
+/* Class = "IBUITabBarItem"; title = "Edit"; ObjectID = "fss-rw-lZN"; */
+"fss-rw-lZN.title" = "تحرير";
+
+/* Class = "IBUITabBarItem"; title = "Item"; ObjectID = "hpD-Yt-YGu"; */
+"hpD-Yt-YGu.title" = "Item";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "j4e-Y5-KjD"; */
+"j4e-Y5-KjD.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "jp0-vv-6uU"; */
+"jp0-vv-6uU.text" = "Label";
+
+/* Class = "IBUITabBarItem"; title = "Item"; ObjectID = "k3f-Dr-Om4"; */
+"k3f-Dr-Om4.title" = "Item";
+
+/* Class = "IBUITextField"; placeholder = "Title"; ObjectID = "lmU-B5-YwT"; */
+"lmU-B5-YwT.placeholder" = "لقب";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "nGn-hD-tDw"; */
+"nGn-hD-tDw.text" = "Label";
+
+/* Class = "IBUITextField"; placeholder = "Email"; ObjectID = "nVY-PY-ajZ"; */
+"nVY-PY-ajZ.placeholder" = "البريد الإلكتروني";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "nVr-uj-CUX"; */
+"nVr-uj-CUX.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "nf9-Pl-Xi9"; */
+"nf9-Pl-Xi9.text" = "Label";
+
+/* Class = "IBUITextField"; placeholder = "Password"; ObjectID = "pNT-TV-8Ln"; */
+"pNT-TV-8Ln.placeholder" = "كلمة المرور";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "rYW-gg-GZj"; */
+"rYW-gg-GZj.text" = "Label";
+
+/* Class = "IBUILabel"; text = "1133 15th St. NW Washington, DC 20005"; ObjectID = "rb8-VM-kZF"; */
+"rb8-VM-kZF.text" = "1133 15th St. NW واشنطن العاصمة 20005";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "s2n-Gs-H9e"; */
+"s2n-Gs-H9e.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "Submit"; ObjectID = "uMr-IC-Hck"; */
+"uMr-IC-Hck.normalTitle" = "عرض";
+
+/* Class = "IBUITextField"; placeholder = "Address / City / State / Zip"; ObjectID = "uUX-NY-Gwj"; */
+"uUX-NY-Gwj.placeholder" = "دولة / مدينة / عنوان / الرمز البريدي";
+
+/* Class = "IBUITabBarItem"; title = "Create Qube"; ObjectID = "ugg-58-hy0"; */
+"ugg-58-hy0.title" = "Qube خلق";
+
+/* Class = "IBUILabel"; text = "Hill"; ObjectID = "wSQ-vJ-Gsn"; */
+"wSQ-vJ-Gsn.text" = "تل";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "wsL-Hr-rLF"; */
+"wsL-Hr-rLF.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "yQy-Xp-np5"; */
+"yQy-Xp-np5.text" = "Label";
+
+/* Class = "IBUITabBarItem"; title = "Map"; ObjectID = "zL2-Np-187"; */
+"zL2-Np-187.title" = "خريطة";
+
+/* Class = "IBUILabel"; text = "DeVere'"; ObjectID = "zzW-16-RyQ"; */
+"zzW-16-RyQ.text" = "";

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController2: UIViewController {
+class newUserVC: UIViewController {
     
     var firstNameLabel:String!
     var middleNameLabel:String!
@@ -18,6 +18,25 @@ class ViewController2: UIViewController {
     var mobileLabel:String!
     var otherNumberLabel:String!
     var companyLabel:String!
+    var addressLabel:String!
+    
+//    NSLocalizedString("comment here")
+//    (NSString localizedStringWithFormat: NSLocalizedString(comment here)
+//    NSFormatter - present info as objects to users as readable text; uses current local as default; to present numeric output
+//    NSNumberFormatter
+//    NSDateFormatter
+//    let formatter = NSDateFormatter()
+//    formatter.dateStyle = .MediumStyle
+//    formatter.timeStyle = .NoStyle
+    
+//    let date = mountain.latestClimb.date
+//    label.text = formatter.stringFromDate(date)
+    
+//    NSBundle
+//    let welcomeURL = NSBundle.mainBundle().URLForResource("Welcome", withExtension:"m4a")
+//    let player = AVAudioPlayer(contentsOfURL:welcomeURL, error:&error)
+    
+    
 
     @IBAction func backButton(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
@@ -51,26 +70,29 @@ class ViewController2: UIViewController {
     
     @IBOutlet weak var imageAddBox: UITextField!
     
+    @IBOutlet weak var addressBox: UITextField!
+    
+    @IBOutlet weak var firstQubeQuestion: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//    func addInfo(text: String) {
-//            var userInput = ""
-//        }
         
+        self.tabBarController?.tabBar.hidden = true
+
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if segue.identifier == "submitButton" {
-            var svc = segue.destinationViewController as ViewController4
+            var svc = segue.destinationViewController as completeCardVC
             svc.firstNameLabel.text = firstNameBox.text
-//            svc.middleName = middleNameLabel.text
-//            svc.lastNameBox = lastNameLabel.text
-//            svc.titleBox = titleLabel.text
-//            svc.emailBox = emailLabel.text
-//            svc.mobileBox = mobileLabel.text
-//            svc.otherNumberBox = otherNumberLabel.text
-//            svc.companyBox = companyLabel.text
+            svc.middleNameLabel.text = middleName.text
+            svc.lastNameLabel.text = lastNameBox.text
+            svc.titleLabel.text = titleBox.text
+            svc.emailLabel.text = emailBox.text
+            svc.mobileLabel.text = mobileBox.text
+            svc.otherNumberLabel.text = otherPhoneBox.text
+            svc.companyLabel.text = companyBox.text
+            svc.addressLabel.text = addressBox.text
         }
     }
 

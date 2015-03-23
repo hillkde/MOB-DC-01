@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController4: UIViewController {
+class completeCardVC: UIViewController {
     
     var firstNameBox:String!
     var middleName:String!
@@ -18,6 +18,7 @@ class ViewController4: UIViewController {
     var mobileBox:String!
     var otherNumberBox:String!
     var companyBox:String!
+    var addressBox:String!
     
     @IBOutlet weak var cardSideOne: UIView!
 
@@ -39,6 +40,8 @@ class ViewController4: UIViewController {
     
     @IBOutlet weak var companyLabel: UILabel!
     
+    @IBOutlet weak var addressLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +54,9 @@ class ViewController4: UIViewController {
         mobileLabel.text = mobileBox
         otherNumberLabel.text = otherNumberBox
         companyLabel.text = companyBox
+        addressLabel.text = addressBox
+
+        self.tabBarController?.tabBar.hidden = false
         
 //        func addInfo(text: String) {
 //             var userInput = ""
